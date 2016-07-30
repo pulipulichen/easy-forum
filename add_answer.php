@@ -36,8 +36,8 @@ $sql2="INSERT INTO $tbl_name(question_id, a_id, a_name, a_email, a_answer, a_dat
 $result2=mysql_query($sql2);
 
 if($result2){
-echo "Successful<BR>";
-echo "<a href='view_topic.php?id=".$id."'>View your answer</a>";
+echo "回覆成功<br />";
+echo "<a href='view_topic.php?id=".$id."'>觀看您的回覆</a>";
 
 // If added new answer, add value +1 in reply column 
 $tbl_name2="forum_question";
@@ -45,7 +45,7 @@ $sql3="UPDATE $tbl_name2 SET reply='$Max_id' WHERE id='$id'";
 $result3=mysql_query($sql3);
 }
 else {
-echo "ERROR";
+echo "錯誤";
 }
 
 // Close connection

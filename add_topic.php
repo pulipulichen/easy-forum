@@ -21,11 +21,11 @@ $sql="INSERT INTO $tbl_name(topic, detail, name, email, datetime)VALUES('$topic'
 $result=mysql_query($sql);
 
 if($result){
-echo "Successful<BR>";
-echo "<a href=index.php>View your topic</a>";
+echo "發表成功<BR>";
+echo "<a href=index.php>觀看您的主題</a>";
 }
 else {
-echo "ERROR";
+echo "錯誤";
 }
 mysql_close();
 ?>

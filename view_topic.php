@@ -16,6 +16,8 @@ $result=mysql_query($sql);
 $rows=mysql_fetch_array($result);
 ?>
 
+<a href="index.php" style="display:block;text-align:center;">回首頁</a>
+
 <table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
 <tr>
 <td><table width="100%" border="0" cellpadding="3" cellspacing="1" bordercolor="1" bgcolor="#FFFFFF">
@@ -28,11 +30,12 @@ $rows=mysql_fetch_array($result);
 </tr>
 
 <tr>
-<td bgcolor="#F8F7F1"><strong>By :</strong> <?php echo $rows['name']; ?> <strong>Email : </strong><?php echo $rows['email'];?></td>
+<td bgcolor="#F8F7F1"><strong>作者 :</strong> <?php echo $rows['name']; ?> 
+    <strong>電子信箱 : </strong><?php echo $rows['email'];?></td>
 </tr>
 
 <tr>
-<td bgcolor="#F8F7F1"><strong>Date/time : </strong><?php echo $rows['datetime']; ?></td>
+<td bgcolor="#F8F7F1"><strong>日期/時間 : </strong><?php echo $rows['datetime']; ?></td>
 </tr>
 </table></td>
 </tr>
@@ -56,22 +59,22 @@ while($rows=mysql_fetch_array($result2)){
 <td bgcolor="#F8F7F1"><?php echo $rows['a_id']; ?></td>
 </tr>
 <tr>
-<td width="18%" bgcolor="#F8F7F1"><strong>Name</strong></td>
-<td width="5%" bgcolor="#F8F7F1">:</td>
+<td width="20%" bgcolor="#F8F7F1"><strong>作者</strong></td>
+<td width="3%" bgcolor="#F8F7F1">:</td>
 <td width="77%" bgcolor="#F8F7F1"><?php echo $rows['a_name']; ?></td>
 </tr>
 <tr>
-<td bgcolor="#F8F7F1"><strong>Email</strong></td>
+<td bgcolor="#F8F7F1"><strong>電子信箱</strong></td>
 <td bgcolor="#F8F7F1">:</td>
 <td bgcolor="#F8F7F1"><?php echo $rows['a_email']; ?></td>
 </tr>
 <tr>
-<td bgcolor="#F8F7F1"><strong>Answer</strong></td>
+<td bgcolor="#F8F7F1"><strong>回覆</strong></td>
 <td bgcolor="#F8F7F1">:</td>
 <td bgcolor="#F8F7F1"><?php echo $rows['a_answer']; ?></td>
 </tr>
 <tr>
-<td bgcolor="#F8F7F1"><strong>Date/Time</strong></td>
+<td bgcolor="#F8F7F1"><strong>日期/時間</strong></td>
 <td bgcolor="#F8F7F1">:</td>
 <td bgcolor="#F8F7F1"><?php echo $rows['a_datetime']; ?></td>
 </tr>
@@ -108,24 +111,24 @@ mysql_close();
 <td>
 <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
 <tr>
-<td width="18%"><strong>Name</strong></td>
+<td width="20%"><strong>名字</strong></td>
 <td width="3%">:</td>
-<td width="79%"><input name="a_name" type="text" id="a_name" size="45"></td>
+<td width="77%"><input name="a_name" type="text" id="a_name" style="width:100%"></td>
 </tr>
 <tr>
-<td><strong>Email</strong></td>
+<td><strong>電子信箱</strong></td>
 <td>:</td>
-<td><input name="a_email" type="text" id="a_email" size="45"></td>
+<td><input name="a_email" type="text" id="a_email" style="width:100%"></td>
 </tr>
 <tr>
-<td valign="top"><strong>Answer</strong></td>
+<td valign="top"><strong>回覆</strong></td>
 <td valign="top">:</td>
-<td><textarea name="a_answer" cols="45" rows="3" id="a_answer"></textarea></td>
+<td><textarea name="a_answer" style="width:100%" rows="3" id="a_answer"></textarea></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
 <td><input name="id" type="hidden" value="<?php echo $id; ?>"></td>
-<td><input type="submit" name="Submit" value="Submit"> <input type="reset" name="Submit2" value="Reset"></td>
+<td><input type="submit" name="Submit" value="發表"> <input type="reset" name="Submit2" value="重設"></td>
 </tr>
 </table>
 </td>

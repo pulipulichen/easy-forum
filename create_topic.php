@@ -9,32 +9,32 @@
 <td>
 <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
 <tr>
-<td colspan="3" bgcolor="#E6E6E6"><strong>Create New Topic</strong> </td>
+<td colspan="3" bgcolor="#E6E6E6"><strong>發表新的主題</strong> </td>
 </tr>
 <tr>
-<td width="14%"><strong>Topic</strong></td>
+<td width="20%"><strong>主題</strong></td>
 <td width="2%">:</td>
-<td width="84%"><input name="topic" type="text" id="topic" size="50" /></td>
+<td width="78%"><input name="topic" type="text" id="topic" style="width: 100%;" /></td>
 </tr>
 <tr>
-<td valign="top"><strong>Detail</strong></td>
+<td valign="top"><strong>內文</strong></td>
 <td valign="top">:</td>
-<td><textarea name="detail" cols="50" rows="3" id="detail"></textarea></td>
+<td><textarea name="detail" style="width: 100%;" rows="3" id="detail"></textarea></td>
 </tr>
 <tr>
-<td><strong>Name</strong></td>
+<td><strong>名字</strong></td>
 <td>:</td>
-<td><input name="name" type="text" id="name" size="50" /></td>
+<td><input name="name" type="text" id="name" style="width: 100%;" /></td>
 </tr>
 <tr>
-<td><strong>Email</strong></td>
+<td><strong>電子信箱</strong></td>
 <td>:</td>
-<td><input name="email" type="text" id="email" size="50" /></td>
+<td><input name="email" type="text" id="email" style="width: 100%;" /></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td><input type="submit" name="Submit" value="Submit" /> <input type="reset" name="Submit2" value="Reset" /></td>
+<td><input type="submit" name="Submit" value="發表" /> <input type="reset" name="Submit2" value="重設" /></td>
 </tr>
 </table>
 </td>

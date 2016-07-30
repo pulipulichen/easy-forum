@@ -17,10 +17,10 @@ $result=mysql_query($sql);
 <table width="90%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
 <tr>
 <td width="6%" align="center" bgcolor="#E6E6E6"><strong>#</strong></td>
-<td width="53%" align="center" bgcolor="#E6E6E6"><strong>Topic</strong></td>
-<td width="15%" align="center" bgcolor="#E6E6E6"><strong>Views</strong></td>
-<td width="13%" align="center" bgcolor="#E6E6E6"><strong>Replies</strong></td>
-<td width="13%" align="center" bgcolor="#E6E6E6"><strong>Date/Time</strong></td>
+<td width="53%" align="center" bgcolor="#E6E6E6"><strong>主題</strong></td>
+<td width="15%" align="center" bgcolor="#E6E6E6"><strong>瀏覽次數</strong></td>
+<td width="13%" align="center" bgcolor="#E6E6E6"><strong>回覆篇數</strong></td>
+<td width="13%" align="center" bgcolor="#E6E6E6"><strong>日期/時間</strong></td>
 </tr>
 
 <?php
@@ -43,7 +43,9 @@ mysql_close();
 ?>
 
 <tr>
-<td colspan="5" align="right" bgcolor="#E6E6E6"><a href="create_topic.php"><strong>Create New Topic</strong> </a></td>
+<td colspan="5" align="right" bgcolor="#E6E6E6"><a href="create_topic.php">
+    <strong>發表新的主題</strong> </a>
+</td>
 </tr>
 </table>
 </body>

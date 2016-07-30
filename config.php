@@ -3,7 +3,7 @@
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
 $password=""; // Mysql password 
-$db_name="forum"; // Database name 
+$db_name="forum"; // <- 請修改這個資料庫名稱
 
 // Connect to server and select database.
 mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
